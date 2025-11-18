@@ -1,0 +1,32 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+/* Encabezado */
+th {
+  background-color: #47B5B5;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+/* Celdas normales */
+td {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Opcional: color alternado para filas */
+tr:nth-child(even) td {
+  background-color: #f9f9f9;
+}
+
+/* Opcional: efecto al pasar el mouse */
+tr:hover td {
+  background-color: #e0ffff;
+}
