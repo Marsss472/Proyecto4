@@ -1,8 +1,1 @@
-[build]
-  command = "npm run build"
-  publish = "dist/Proyecto4/browser"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+/*    /index.html   200
