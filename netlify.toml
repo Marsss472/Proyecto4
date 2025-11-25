@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "npm run build && cp public/_redirects dist/Proyecto4/browser/"
   publish = "dist/Proyecto4/browser"
 
 [[redirects]]
