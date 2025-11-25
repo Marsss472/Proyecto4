@@ -1,32 +1,41 @@
-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-family: Arial, sans-serif;
-}
+/* src/app/admin/user-list/user-list.component.css */
 
-/* Encabezado */
-th {
-  background-color: #47B5B5;
-  color: white;
-  padding: 10px;
-  text-align: left;
-  border: 1px solid #ddd;
-}
-
-/* Celdas normales */
-td {
-  background-color: white;
+h3 {
   color: black;
-  padding: 10px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+/* Estilo general de la tabla */
+table { /* Cambiado de #customers a table para ser más general */
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 15px;
+  color: black;
+}
+
+/* Estilo para las celdas de la tabla (td y th) */
+table td, table th {
   border: 1px solid #ddd;
+  padding: 8px;
 }
 
-/* Opcional: color alternado para filas */
-tr:nth-child(even) td {
-  background-color: #f9f9f9;
+/* Color de fondo para filas impares (un café ligeramente más oscuro) */
+table tr:nth-child(even){
+  background-color: #f0f0e0; /* Un beige suave para las filas pares */
 }
 
-/* Opcional: efecto al pasar el mouse */
-tr:hover td {
-  background-color: #e0ffff;
+/* Estilo al pasar el ratón (hover) */
+table tr:hover {
+  background-color: #e0e0c0; /* Un beige un poco más oscuro al pasar el ratón */
+}
+
+/* Estilo para el encabezado de la tabla (th) */
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #5d4037; /* Café oscuro para el encabezado */
+  color: white;
 }

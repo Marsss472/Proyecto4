@@ -1,3 +1,31 @@
+/* src/app/home/home.component.css */
+
 h1 {
-    color: #1AD9CA
+  color: black; /* Título principal en negro */
+  border-bottom: 2px solid #ccc; /* Línea sutil bajo el título */
+  padding-bottom: 10px;
+}
+
+/* Aseguramos que el texto dentro del home sea negro */
+p {
+    color: black;
+}
+
+/* Estilo para los enlaces de la lista */
+ul {
+    list-style: none; /* Quitamos los puntos de la lista */
+    padding: 0;
+}
+
+li a {
+    color: #4e342e; /* Un café oscuro para los enlaces */
+    text-decoration: none;
+    font-weight: bold;
+    display: block; /* Para que ocupen todo el ancho y se vean mejor */
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+li a:hover {
+    color: #8d6e63; /* Un café más claro al pasar el ratón */
 }

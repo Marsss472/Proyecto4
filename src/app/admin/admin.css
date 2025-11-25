@@ -1,16 +1,35 @@
-a {
-  display: inline-block;
-  background-color: aqua;
-  color: white;
-  text-decoration: none;
-  padding: 10px 20px;
-  margin-right: 10px;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s, transform 0.2s;
+/* src/app/admin/admin.component.css */
+
+h1 {
+    color: black; /* Título principal de Admin en negro */
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-a:hover {
-  background-color: #00cccc;
-  transform: scale(1.05);
+nav {
+    display: flex;
+    gap: 15px; /* Espacio entre los enlaces de admin */
+    margin-bottom: 20px;
+}
+
+nav a {
+    display: inline-block;
+    background-color: #8d6e63; /* Un tono café para los botones */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    background-color: #6d4c41; /* Café más oscuro al pasar el ratón */
+    transform: scale(1.05); /* Pequeño efecto de escala */
+}
+
+/* Estilo para el enlace activo dentro de admin */
+nav a.routerLinkActive {
+    background-color: #4e342e; /* Café muy oscuro para el activo */
 }
